@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoapp/Pages/AboutPages.dart';
 import 'package:todoapp/Pages/HomePage.dart';
 import 'package:todoapp/utils/routes.dart';
 import 'Widgets/theme.dart';
@@ -19,7 +20,9 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
          initialRoute: MyRoutes.homeroute,
          routes: {
-           MyRoutes.homeroute: (context) => Homepage()
+           MyRoutes.homeroute: (context) => AboutMe(), 
+          //  "/About": (context) => AboutMe (),
+            // "Feedback": (context) => Feedback()
          },
         );
   }

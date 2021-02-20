@@ -1,16 +1,13 @@
-# todoapp
+Hey Folks , This is My First Project Made using Flutter 
 
-A new Flutter project.
+This Project is basically A To-Do List in which you can add basic notes and stuffs
+.
+.
+I am trying to Add more and more features and stuff to it Soon.
 
-## Getting Started
+If you Want to Give Feedback, report Bugs You are free to report it to me
 
-This project is a starting point for a Flutter application.
+If you want to Add additional Features to it , I am more than happy to Work with you
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Thanks for Visiting Here :)

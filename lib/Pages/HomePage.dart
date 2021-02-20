@@ -7,7 +7,7 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  int _currentindex = 0;
+  int _currentindex = null;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todoapp/Pages/AboutPages.dart';
+import 'package:todoapp/Pages/Forms.dart';
 import 'package:todoapp/Pages/HomePage.dart';
 import 'package:todoapp/utils/routes.dart';
 import 'Widgets/theme.dart';
@@ -20,9 +21,10 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
          initialRoute: MyRoutes.homeroute,
          routes: {
-           MyRoutes.homeroute: (context) => AboutMe(), 
-          //  "/About": (context) => AboutMe (),
-            // "Feedback": (context) => Feedback()
+            "/": (context) => Homepage(),
+         // MyRoutes.homeroute: (context) => Forms(), 
+            "/About": (context) => AboutMe (),
+             "/Feedback": (context) => Forms(),
          },
         );
   }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
-
 class Forms extends StatefulWidget {
   @override
   _FormsState createState() => _FormsState();
@@ -76,9 +75,9 @@ class _FormsState extends State<Forms> {
                         TextFormField(
                           minLines: 1,
                           maxLines: 10,
-                         autocorrect: true,
-                         enableInteractiveSelection: true,
-                         enableSuggestions: true,
+                          autocorrect: true,
+                          enableInteractiveSelection: true,
+                          enableSuggestions: true,
                           autofocus: true,
                           decoration: InputDecoration(
                             border: OutlineInputBorder(),
@@ -133,9 +132,7 @@ class _FormsState extends State<Forms> {
         onTap: (index) {
           setState(() {
             _currentindex = index;
-            if (_currentindex == 0) {
-              Navigator.pushNamed(context, '/Feedback');
-            } else if (_currentindex == 1) {
+            if (_currentindex == 1) {
               Navigator.pushNamed(context, '/');
             } else if (_currentindex == 2) {
               Navigator.pushNamed(context, '/About');

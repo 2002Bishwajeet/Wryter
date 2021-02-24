@@ -62,14 +62,10 @@ class _AboutMeState extends State<AboutMe> {
         onTap: (index) {
           setState(() {
             _currentindex = index;
-             if (_currentindex == 0) {
+            if (_currentindex == 0) {
               Navigator.pushNamed(context, '/Feedback');
-            }
-           else  if (_currentindex == 1) {
+            } else if (_currentindex == 1) {
               Navigator.pushNamed(context, '/');
-            }
-           else  if (_currentindex == 2) {
-              Navigator.pushNamed(context, '/About');
             }
           });
         },

@@ -14,18 +14,19 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        themeMode: ThemeMode.light, //Khali yeh daalne mein nhi chlega isne bas isse adopt kiya hai
-        theme: Mytheme.lightTheme(context),
-        // debugShowCheckedModeBanner: false,//trick to remove debug icon
-        darkTheme: Mytheme.darkTheme(context),
-        debugShowCheckedModeBanner: false,
-         initialRoute: MyRoutes.homeroute,
-         routes: {
-            "/": (context) => Homepage(),
-         // MyRoutes.homeroute: (context) => Forms(), 
-            "/About": (context) => AboutMe (),
-             "/Feedback": (context) => Forms(),
-         },
-        );
+      themeMode: ThemeMode
+          .light, //Khali yeh daalne mein nhi chlega isne bas isse adopt kiya hai
+      theme: Mytheme.lightTheme(context),
+      // debugShowCheckedModeBanner: false,//trick to remove debug icon
+      darkTheme: Mytheme.darkTheme(context),
+      debugShowCheckedModeBanner: false,
+      initialRoute: MyRoutes.homeroute,
+      routes: {
+        "/": (context) => Homepage(),
+        MyRoutes.homeroute: (context) => Forms(),
+        "/About": (context) => AboutMe(),
+        "/Feedback": (context) => Forms(),
+      },
+    );
   }
 }

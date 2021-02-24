@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 
-
 class Homepage extends StatefulWidget {
   @override
   _HomepageState createState() => _HomepageState();
@@ -9,13 +8,11 @@ class Homepage extends StatefulWidget {
 
 class _HomepageState extends State<Homepage> {
   int _currentindex = 1; // dont set it null
- 
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: 
-      Center(child: Text('Tap the + icon to add Notes')),
+      body: Center(child: Text('Tap the + icon to add Notes')),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blue[900],
         onPressed: () => setState(() => null),
@@ -45,8 +42,6 @@ class _HomepageState extends State<Homepage> {
             _currentindex = index;
             if (_currentindex == 0) {
               Navigator.pushNamed(context, "/Feedback");
-            } else if (_currentindex == 1) {
-              Navigator.pushNamed(context, '/');
             } else if (_currentindex == 2) {
               Navigator.pushNamed(context, '/About');
             }

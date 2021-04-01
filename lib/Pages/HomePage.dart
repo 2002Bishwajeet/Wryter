@@ -15,7 +15,7 @@ class _HomepageState extends State<Homepage> {
       body: Center(child: Text('Tap the + icon to add Notes')),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blue[900],
-        onPressed: () => setState(() => null),
+        onPressed: () => setState(() =>   Navigator.pushNamed(context, '/Notes')),
         child: const Icon(
           Icons.add,
           color: Colors.white,

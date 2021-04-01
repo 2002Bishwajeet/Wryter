@@ -40,6 +40,7 @@ class _FormsState extends State<Forms> {
                     child: Column(
                       children: [
                         TextFormField(
+                          autofocus: false,
                           decoration: InputDecoration(
                             hintText: "Pls Enter Your Name",
                             labelText: "Name",
@@ -78,7 +79,7 @@ class _FormsState extends State<Forms> {
                           autocorrect: true,
                           enableInteractiveSelection: true,
                           enableSuggestions: true,
-                          autofocus: true,
+                          autofocus: false,
                           decoration: InputDecoration(
                             border: OutlineInputBorder(),
                             hintText: "Type your message here",

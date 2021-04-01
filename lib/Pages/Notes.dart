@@ -13,7 +13,7 @@ class _NotesState extends State<Notes> {
       body: TextField(
            decoration: InputDecoration(
              border: OutlineInputBorder(),
-              hintText: "Pls Enter Your Name",
+              hintText: "Enter Your Note",
 
       ),
     

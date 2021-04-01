@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:todoapp/Pages/AboutPages.dart';
 import 'package:todoapp/Pages/Forms.dart';
 import 'package:todoapp/Pages/HomePage.dart';
+import 'package:todoapp/Pages/Notes.dart';
 import 'package:todoapp/utils/routes.dart';
 import 'Widgets/theme.dart';
 
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       themeMode: ThemeMode
-          .light, //Khali yeh daalne mein nhi chlega isne bas isse adopt kiya hai
+          .system, //Khali yeh daalne mein nhi chlega isne bas isse adopt kiya hai
       theme: Mytheme.lightTheme(context),
       // debugShowCheckedModeBanner: false,//trick to remove debug icon
       darkTheme: Mytheme.darkTheme(context),
@@ -23,9 +24,10 @@ class MyApp extends StatelessWidget {
       initialRoute: MyRoutes.homeroute,
       routes: {
         "/": (context) => Homepage(),
-        MyRoutes.homeroute: (context) => Forms(),
+        MyRoutes.homeroute: (context) => Homepage(),
         "/About": (context) => AboutMe(),
         "/Feedback": (context) => Forms(),
+         "/Notes": (context) => Notes(),
       },
     );
   }

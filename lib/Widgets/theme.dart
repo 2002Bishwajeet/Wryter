@@ -29,6 +29,7 @@ class Mytheme {
       canvasColor: darkCreamcolor,
       buttonColor: lightBluishcolor,
       accentColor: Colors.white,
+      
       appBarTheme: AppBarTheme(
         color: Colors.white,
         elevation: 0.0,
